@@ -19,7 +19,7 @@ const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY as string | undefined
 const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
 
 // Un seul modèle fixe — pas de boucle multi-modèles
-const GEMINI_MODEL = 'gemini-1.5-flash';
+const GEMINI_MODEL = 'gemini-2.5-flash';
 
 // ── Prompt système SEF ─────────────────────────────────────────────
 const SYSTEM_PROMPT = `Tu es l'assistant virtuel officiel du Secours Évangélique de France (SEF), une association Loi 1901 reconnue d'intérêt public.
@@ -138,6 +138,7 @@ async function askGemini(history: GeminiMessage[], userMessage: string): Promise
       }
 
       const err = await res.json().catch(() => ({}));
+      console.error('[SEF Chatbot] Erreur API Gemini:', JSON.stringify(err, null, 2));
       throw new Error(err?.error?.message || `Erreur ${res.status}`);
     }
 
@@ -293,7 +294,7 @@ export default function Chatbot() {
               </div>
               <div style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.72rem', display: 'flex', alignItems: 'center', gap: '0.3rem', marginTop: '1px' }}>
                 <span style={{ width: '6px', height: '6px', background: isConfigured ? '#4ADE80' : '#FCD34D', borderRadius: '50%', display: 'inline-block' }} />
-                {isConfigured ? 'IA active · Gemini 1.5 Flash' : 'Clé API manquante'}
+                {isConfigured ? 'IA active · Gemini 2.5 Flash' : 'Clé API manquante'}
               </div>
             </div>
             <button onClick={e => { e.stopPropagation(); setOpen(false); }}
