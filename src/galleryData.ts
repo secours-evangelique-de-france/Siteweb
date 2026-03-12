@@ -1,0 +1,173 @@
+import { GalleryPhoto } from './types';
+
+// Unsplash photos — libres de droits pour usage non commercial
+// Format : https://images.unsplash.com/photo-{ID}?w=800&q=80
+// Remplacez ces URLs par vos propres photos une fois disponibles
+
+export const GALLERY_PHOTOS: GalleryPhoto[] = [
+  // TERRAIN
+  {
+    id: 'g1',
+    url: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=75',
+    titre: 'Distribution alimentaire',
+    categorie: 'alimentation',
+    lieu: 'Croissy-Beaubourg',
+  },
+  {
+    id: 'g2',
+    url: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=75',
+    titre: 'Aide alimentaire d\'urgence',
+    categorie: 'alimentation',
+    lieu: 'Les Mureaux',
+  },
+  {
+    id: 'g3',
+    url: 'https://images.unsplash.com/photo-1459156212016-c812468e2115?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1459156212016-c812468e2115?w=600&q=75',
+    titre: 'Épicerie solidaire',
+    categorie: 'alimentation',
+    lieu: 'Versailles',
+  },
+  {
+    id: 'g4',
+    url: 'https://images.unsplash.com/photo-1547496502-affa22d38842?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1547496502-affa22d38842?w=600&q=75',
+    titre: 'Préparation des colis',
+    categorie: 'alimentation',
+    lieu: 'Créteil',
+  },
+  // JEUNESSE
+  {
+    id: 'g5',
+    url: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=600&q=75',
+    titre: 'Atelier créatif jeunesse',
+    categorie: 'jeunesse',
+    lieu: 'Gonesse',
+  },
+  {
+    id: 'g6',
+    url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=75',
+    titre: 'Soutien scolaire',
+    categorie: 'jeunesse',
+    lieu: 'Massy',
+  },
+  {
+    id: 'g7',
+    url: 'https://images.unsplash.com/photo-1560785496-3c9d2c3a3b42?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1560785496-3c9d2c3a3b42?w=600&q=75',
+    titre: 'Club jeunes',
+    categorie: 'jeunesse',
+    lieu: 'Chanteloup-les-Vignes',
+  },
+  {
+    id: 'g8',
+    url: 'https://images.unsplash.com/photo-1526976668912-1a811878dd37?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1526976668912-1a811878dd37?w=600&q=75',
+    titre: 'Sortie culturelle',
+    categorie: 'jeunesse',
+    lieu: 'Orléans',
+  },
+  // TERRAIN / ACCOMPAGNEMENT
+  {
+    id: 'g9',
+    url: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=75',
+    titre: 'Accompagnement des familles',
+    categorie: 'terrain',
+    lieu: 'Viry-Châtillon',
+  },
+  {
+    id: 'g10',
+    url: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=75',
+    titre: 'Aide aux personnes âgées',
+    categorie: 'terrain',
+    lieu: 'Compiègne',
+  },
+  {
+    id: 'g11',
+    url: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=75',
+    titre: 'Permanence sociale',
+    categorie: 'terrain',
+    lieu: 'La Défense',
+  },
+  {
+    id: 'g12',
+    url: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=75',
+    titre: 'Accompagnement logement',
+    categorie: 'terrain',
+    lieu: 'Boissy-Saint-Léger',
+  },
+  // BÉNÉVOLES
+  {
+    id: 'g13',
+    url: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=75',
+    titre: 'Équipe de bénévoles',
+    categorie: 'benevoles',
+    lieu: 'Croissy-Beaubourg',
+  },
+  {
+    id: 'g14',
+    url: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=75',
+    titre: 'Formation bénévoles',
+    categorie: 'benevoles',
+    lieu: 'Versailles',
+  },
+  {
+    id: 'g15',
+    url: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&q=75',
+    titre: 'Équipe solidaire',
+    categorie: 'benevoles',
+    lieu: 'Le Mans',
+  },
+  // ÉVÉNEMENTS
+  {
+    id: 'g16',
+    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=75',
+    titre: 'Assemblée Générale 2024',
+    categorie: 'evenements',
+    lieu: 'Croissy-Beaubourg',
+  },
+  {
+    id: 'g17',
+    url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=75',
+    titre: 'Gala de soutien SEF',
+    categorie: 'evenements',
+    lieu: 'Paris',
+  },
+  {
+    id: 'g18',
+    url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&q=75',
+    titre: 'Journée portes ouvertes',
+    categorie: 'evenements',
+    lieu: 'Massy',
+  },
+  {
+    id: 'g19',
+    url: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600&q=75',
+    titre: 'Concert solidaire',
+    categorie: 'evenements',
+    lieu: 'Orléans',
+  },
+  {
+    id: 'g20',
+    url: 'https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=1200&q=85',
+    thumb: 'https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=600&q=75',
+    titre: 'Marche solidaire',
+    categorie: 'evenements',
+    lieu: 'Créteil',
+  },
+];
