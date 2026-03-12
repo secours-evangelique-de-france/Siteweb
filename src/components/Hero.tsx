@@ -98,9 +98,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               marginBottom: '2.5rem',
               animationDelay: '0.1s',
             }}>
-              Le Secours Évangélique de France agit au quotidien pour accompagner les personnes
-              vulnérables à travers ses antennes en France — alimentation, logement, santé,
-              insertion, et bien plus encore.
+              le secours évangélique de france est une association œuvrant dans les actions sociales et qui a pour objectif de démontrer la charité chrétienne, l'identité de l'église, les valeurs et principes de compassion et de solidarité que prônent les évangiles ; elle se veut également de proposer et d'apporter, au travers de ses actions et prises en charge sociales, des solutions aux défis auxquels fait face la france 
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

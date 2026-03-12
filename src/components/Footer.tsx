@@ -86,7 +86,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <img src={logoSef} alt="SEF" style={{ height: '56px', width: 'auto', marginBottom: '1rem' }} />
             <p className="footer-brand-text" style={{ lineHeight: 1.8, fontSize: '0.9rem', maxWidth: '280px' }}>
-              Le Secours Évangélique de France — Association Loi 1901 œuvrant pour l'aide aux personnes
+              Le Secours Évangélique de France est une Association Loi 1901 œuvrant pour l'aide aux personnes
               en difficulté à travers toute la France.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.5rem' }}>
